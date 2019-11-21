@@ -1,0 +1,42 @@
+
+<div class="container">
+  <div class="row">
+<!--     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+ -->
+      <div class="card-trip">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= @cocktail.name %></h2>
+          <div class="ingredients-list"></div>
+      <% @cocktail.doses.each do |dose| %>
+        <p>
+          - <%= dose.ingredient.name %> : <%= dose.description %>
+          <%= link_to dose_path(dose.cocktail_id), method: :delete, data: {
+              confirm: 'Are you sure?',
+              text: 'You won\'t be able to revert this!',
+              'confirm-button-text': 'Yes, delete it!',
+              'cancel-button-text': 'Cancel',
+              'sweet-alert-type': 'warning',
+              'confirm-button-color': 'rgb(126, 198, 76)',
+              'cancel-button-color': 'rgb(167,0,42)'
+            } do %>
+            <span>Remove</span>
+          <% end %>
+        </p>
+        <% end %>
+        </div>
+          <ul class="list-unstyled">
+            <li><%= link_to "See all cocktails", cocktails_path %></li>
+            <li><%= link_to "Add ingredients", new_cocktail_dose_path(@cocktail) %></li>
+          </ul>
+        </div>
+
+        
+
+        </div>
+      </div>
+
+<!--     </div> -->
+  </div>
+</div>

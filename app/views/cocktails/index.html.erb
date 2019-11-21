@@ -1,0 +1,31 @@
+<div class="banner">
+  <div class="container">
+    <h1>There's a drink for every mood or occasion.</h1>
+
+    <p>Change your life and learn to code at one of our campuses around the world.</p>
+    <a class="btn" href="#"><%= link_to "Add a new Coktail", new_cocktail_path, class: 'btn btn-light' %></a>
+    <p><i class="fas fa-angle-down" id="arrow"></i></p> 
+
+  </div>
+</div>
+
+
+
+
+
+<h2>- COCKTAILS -</h2>
+<div class="cocktails-list">
+    <div class="container">
+      <div class="row">
+        <% @cocktails.each do |cocktail| %>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card-category">
+                <h2 id="cocktail-name"><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+              </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
