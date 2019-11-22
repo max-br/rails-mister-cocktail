@@ -23,8 +23,8 @@ puts "Yeah I created #{Ingredient.count}!"
 
 Cocktail.destroy_all
 
-Cocktail.create(name: "Mojito")
-Cocktail.create(name: "Long Island Iced Tea")
-Cocktail.create(name: "Bloody Mary")
+# Cocktail.create(name: "Mojito")
+# Cocktail.create(name: "Long Island Iced Tea")
+# Cocktail.create(name: "Bloody Mary")
 
-puts "Yeah I created #{Cocktail.count}!"
+# puts "Yeah I created #{Cocktail.count}!"

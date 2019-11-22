@@ -2,7 +2,11 @@
 <div class="container">
   <div class="row">
       <div class="card-trip">
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+
+
+    <div class="card-image" style="background-image: url('<%= cl_image_path @cocktail.photo, height: 300, width: 800, crop: :fill %>')">
+    </div>
+
       <div class="card-trip-infos">
         <div>
           <h2><%= @cocktail.name %></h2>

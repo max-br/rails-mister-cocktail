@@ -3,7 +3,11 @@
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin: 100px auto;
-  width: 900px;
+  width: 800px;
+}
+
+.card-image {
+  height: 300px;
 }
 
 .card-trip > img {
@@ -40,4 +44,8 @@
 
 .card-trip .card-trip-infos ul li a:hover {
   color: black;
+}
+
+.card-trip-infos {
+  margin-top: 0;
 }
