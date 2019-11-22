@@ -12,9 +12,12 @@
   margin-bottom: 40px;
 }
 
-#cocktail-name {
-  text-decoration: none;
+#cocktail-name a {
+  text-decoration: none!important;
   color: white;
 }
 
-
+#cocktail-name a:hover {
+  transition: all 500ms;
+  font-size-adjust: 40px;
+}
