@@ -19,7 +19,7 @@ ingredients["drinks"].each do |ingredient|
   Ingredient.create(name: ingredient["strIngredient1"])
 end
 
-puts "Yeah I created #{Ingredient.count}!"
+puts "Yeah I created #{Ingredient.count} ingredients!"
 
 Cocktail.destroy_all
 
